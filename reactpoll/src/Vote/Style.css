@@ -1,0 +1,15 @@
+/* Vote Page  */
+.Vote-Selection{
+    margin: 25px
+}
+.Vote-Title{
+    font-size: 30px;
+}
+#Vote-Option{
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+#Vote-botton{
+    width:100px;
+    margin-top:10px;
+}

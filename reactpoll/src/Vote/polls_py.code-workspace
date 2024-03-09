@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../polls_py"
+		},
+		{
+			"path": "../../../.."
+		},
+		{
+			"path": "../../../../../polls_html"
+		},
+		{
+			"path": "../../../../../polls_be/01_ex/mysite"
+		}
+	],
+	"settings": {}
+}

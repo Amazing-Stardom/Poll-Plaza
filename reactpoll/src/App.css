@@ -1,0 +1,615 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* --Home -- */
+/* Main Body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 10px;
+  padding: 0px;
+}
+/* flexboxpart */
+.create-flex-box{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  margin-left: 0px;
+}
+
+  .header {
+  border-style: outset;
+          background-color: rgb(231, 231, 231);
+          height: 70px;
+          padding-top: 10px;
+          padding-left: 30px;
+          font-size: 30px;
+          border-radius: 10px;
+         
+      }
+
+       .sidebar {
+          width: 30%;
+         height: 100%;
+          display: table-cell;
+          display: flex;
+          float: left;
+          margin-top: 20px;
+          flex-direction: column;
+         
+        
+      } 
+      .Option{
+          padding-top: 10px;
+          padding-left: 11px;
+          font-size: 16px;
+      }
+      .Create{
+          width: 175px;
+          height: 30px;
+          margin-top: 10px;
+          margin-bottom: 10px;
+          margin-left: 7px;
+          background-color: aqua;
+          border-style: hidden ;
+
+      }
+      .Filter{
+          margin: 5px;
+          width: 100px;
+          height: 25px;
+      }
+      
+      .tag-container {
+          width: 90%;
+          border-style: outset;
+          background-color: rgb(231, 231, 231);
+          margin: 5px;
+          height: 100%;
+          border-radius: 10px;
+      }
+      
+      .main-content {
+          margin-top: 79px;
+          width: 100%;
+          flex: 80%;
+       
+      }
+
+      table {
+          border-collapse: collapse;
+
+          width: 90%;
+      }
+
+      th {
+          border: 1px solid #8f8f8f;
+          background-color: #cccccc;
+          padding: 8px;
+          text-align: left;
+      }
+td {
+   border: 1px solid #8f8f8f;
+  padding: 8px;
+  width: 200px;
+  height: 50px;
+
+}
+.Create-button-home{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+/* Mobile L */
+@media (max-width: 941px){
+  .tag-container {
+  width: 171.266px;
+  }
+}
+@media (max-width: 768px){
+  .tag-container {
+  width: 171.266px;
+  }
+}
+@media (max-width: 425px) {
+  .create-flex-box{
+    flex: 100%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+  }
+  .main-content{
+      width:100%;
+  }
+  .header {
+    border-style: outset;
+            width: 80%;
+            background-color: rgb(231, 231, 231);
+            height: 70px;
+            padding-top: 90px;
+            padding-left: 30px;
+            font-size: 30px;
+  
+           
+        }
+  .tag-container {
+    width: 95%;
+    border-style: outset;
+    background-color: rgb(231, 231, 231);
+    margin: 5px;
+    height: 100%;
+}
+.Filter{
+  margin: 10px;
+  width: 100px;
+  height: 25px;
+}
+  .sidebar {
+    width: 100%;
+   height: 100%;
+    display: table-cell;
+    float: left;
+    margin-top: 20px;
+} 
+  .create-flex-box{
+    flex: 100%;
+    flex-direction: column;
+
+    flex-wrap: nowrap;
+
+  }
+  .main-content{
+      width:100%;
+  }
+  table {
+    border-collapse: collapse;
+
+    width:400px;
+}
+}
+/* @media (max-width: 650px) {
+  .tag-container {
+    width: 50%;
+    border-style: outset;
+    background-color: rgb(231, 231, 231);
+    margin: 5px;
+    height: 100%;
+}
+
+  .sidebar {
+    width: 100%;
+   height: 100%;
+    display: table-cell;
+    float: left;
+    margin-top: 20px;
+} 
+  .create-flex-box{
+    flex: 100%;
+    flex-direction: column;
+
+    flex-wrap: nowrap;
+
+  }
+  .main-content{
+      width:100%;
+  }
+} */
+/* Mobile M */
+@media (max-width: 375px) {
+  .header {
+    border-style: outset;
+            width: 90%;
+            background-color: rgb(231, 231, 231);
+            height: 70px;
+            padding-top: 90px;
+            padding-left: 30px;
+            font-size: 30px;
+  
+           
+        }
+  .tag-container {
+    width: 95%;
+    border-style: outset;
+    background-color: rgb(231, 231, 231);
+    margin: 5px;
+    height: 100%;
+}
+.Filter{
+  margin: 10px;
+  width: 100px;
+  height: 25px;
+}
+  .sidebar {
+    width: 100%;
+   height: 100%;
+    display: table-cell;
+    float: left;
+    margin-top: 20px;
+} 
+  .create-flex-box{
+    flex: 100%;
+    flex-direction: column;
+
+    flex-wrap: nowrap;
+
+  }
+  .main-content{
+      width:100%;
+  }
+  table {
+    border-collapse: collapse;
+
+    width:400px;
+}
+}
+/* Mobile S */
+@media (max-width: 320px) {
+  .header {
+    border-style: outset;
+            width: 90%;
+            background-color: rgb(231, 231, 231);
+            height: 70px;
+            padding-top: 90px;
+            padding-left: 30px;
+            font-size: 30px;
+  
+           
+        }
+  .tag-container {
+    width: 100%;
+    border-style: outset;
+    background-color: rgb(231, 231, 231);
+    margin: 5px;
+    height: 100%;
+}
+.Filter{
+  margin-left: 0px;
+  width: 100px;
+  height: 25px;
+}
+  .sidebar {
+    width: 100%;
+   height: 100%;
+    display: table-cell;
+    float: left;
+    margin-top: 20px;
+} 
+  .create-flex-box{
+    flex: 100%;
+    flex-direction: column;
+
+    flex-wrap: nowrap;
+
+  }
+  .main-content{
+      width:400px;
+  }
+}
+/* Poll details */
+/* Poll details */
+.poll-details {
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.poll-details-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.poll-title {
+  font-size: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#Vote {
+  margin-top: 10px;
+  margin-left: 0px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.poll-details-table {
+  width: 60%;
+}
+
+.poll-details-pie {
+  width: 40%;
+}
+
+.tags {
+  margin-top: 20px;
+  font-weight: bold;
+    
+}
+
+.poll-details-table,
+.poll-details-pie {
+  display: flex;
+  flex-direction: column;
+}
+.poll-details-table-pie {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    padding-left: 10px;/* Center the content horizontally */
+  }
+@media (max-width: 320px) {
+  .poll-details {
+    flex-direction: column;
+    align-items: center;
+  }
+  .poll-title {
+    font-size: 20px;
+  }
+  .poll-details-table-pie {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    flex-wrap: nowrap;/* Center the content horizontally */
+  }
+  .poll-details-table {
+    width: 100%; /* Set the width to full for better responsiveness */
+    margin-right: 0; /* Remove the right margin */
+    margin-bottom: 20px; /* Add bottom margin for spacing */
+  }
+  .poll-details-pie {
+    width: 100%; /* Set the width to full for better responsiveness */
+  }
+  .TableContainer {
+    width: 100%;
+  }
+}
+
+@media (max-width: 375px) {
+  .poll-title {
+    font-size: 25px;
+  }
+  .poll-details {
+    flex-direction: column;
+    align-items: center;
+  }
+  .poll-title {
+    font-size: 20px;
+  }
+  .poll-details-table-pie {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+  }
+  .poll-details-table {
+    width: 100%; /* Set the width to full for better responsiveness */
+    margin-right: 0; /* Remove the right margin */
+    margin-bottom: 20px; /* Add bottom margin for spacing */
+  }
+  .poll-details-pie {
+    width: 100%; /* Set the width to full for better responsiveness */
+  }
+}
+
+@media (max-width: 425px) {
+  .poll-title {
+    font-size: 28px;
+  }
+   .poll-title {
+    font-size: 25px;
+  }
+  .poll-details {
+    flex-direction: column;
+    align-items: center;
+  }
+  .poll-title {
+    font-size: 20px;
+  }
+  .poll-details-table-pie {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+  }
+  .poll-details-table {
+    width: 100%; /* Set the width to full for better responsiveness */
+    margin-right: 0; /* Remove the right margin */
+    margin-bottom: 20px; /* Add bottom margin for spacing */
+  }
+  .poll-details-pie {
+    width: 100%; /* Set the width to full for better responsiveness */
+  }
+}
+@media (max-width: 768px) {
+  .poll-title {
+    font-size: 28px;
+  }
+   .poll-title {
+    font-size: 25px;
+  }
+  .poll-details {
+    flex-direction: column;
+    align-items: center;
+  }
+  .poll-title {
+    font-size: 20px;
+  }
+  .poll-details-table-pie {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+  }
+  .poll-details-table {
+    width: 100%; /* Set the width to full for better responsiveness */
+    margin-right: 0; /* Remove the right margin */
+    margin-bottom: 20px; /* Add bottom margin for spacing */
+  }
+  .poll-details-pie {
+    width: 100%; /* Set the width to full for better responsiveness */
+  }
+}
+
+
+/* Create Poll  */
+
+.Form{
+  border-radius: 10px;
+  padding-top: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 350px;
+  padding: 10px;
+  background-color: rgb(231, 231, 231);
+  flex: 100%;
+  flex-direction: column;
+  border:4px;
+  border-style: groove;
+  
+}
+#Input-data{
+  width: 300px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  border-radius: 10px;
+  border-style: groove;
+  border-color: aliceblue ;
+  height: 30px;
+}
+#form-text{
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 20px;
+}
+.add-option{  
+  margin-top: 5px;
+  margin-bottom: 5px;
+  flex: left
+}
+.flex-box{
+height: 500px;
+}
+.form-div{
+  font-size: 22px;
+  margin-bottom: 40px;
+  
+}
+.Create-button{
+  padding-top: 10px;
+  margin-left: 10px;
+}
+@media (max-width: 320px) {
+  .form{
+    flex: 100%;
+    flex-direction: column;
+    visibility: collapse;
+  }
+  .Form{
+    padding-top: 10px;
+    background-color: rgb(231, 231, 231);
+    margin-top: 30px;
+    margin-left: 0px;
+    width: 100%;
+    padding: 10px;
+  }
+  #Input-data{
+    width: 300px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border-style: groove;
+    border-color: aliceblue ;
+    height: 30px;
+  }
+}
+@media only screen and (max-width:412px){
+  #form-text{
+      font-size: 25px;
+  }
+  #Input-data{
+      font-size: 15px;
+      height:30px;
+  }
+  .add-option{
+      height: 30px;
+      font-size: 25px;
+  }
+}
+@media only screen and (max-width:820px){
+  .form{
+      height: 100%;
+      display: flex;
+    }
+  #form-text{
+      font-size: 25px;
+  }
+  #Input-data{
+      font-size: 15px;
+      height:30px;
+  }
+  .add-option{
+      height: 30px;
+     
+  }
+}
+  
+
+
+/* Vote Page  */
+.Vote-Selection{
+  margin: 10px
+}
+.Vote-Title{
+  font-size: 30px;
+}
+#Vote-Option{
+  margin-top:10px;
+  margin-bottom: 10px;
+}
+.Option-Vote{
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: large;
+}
+#Vote-botton{
+  width:100px;
+  margin-top:10px;
+}
+.error-message{
+  color: red;
+  font-size: larger;
+}
