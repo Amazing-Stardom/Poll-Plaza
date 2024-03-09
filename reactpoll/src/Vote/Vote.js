@@ -6,7 +6,7 @@ function Vote() {
     const { polldata } = location.state;
     const [selectedOption, setSelectedOption] = useState(null);
     const [errorMessage, setErrorMessage] = useState('');
-
+console.log(polldata);
     const handleOptionChange = (event) => {
         const clickedOption = event.target.value;
         setSelectedOption(prevSelectedOption => {
