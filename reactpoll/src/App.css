@@ -55,9 +55,9 @@ body {
   .header {
   border-style: outset;
           background-color: rgb(231, 231, 231);
-          height: 70px;
+          height: 50px;
           padding-top: 10px;
-          padding-left: 30px;
+          padding-left: 10px;
           font-size: 30px;
           border-radius: 10px;
          
