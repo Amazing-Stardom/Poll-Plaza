@@ -16,10 +16,43 @@ Welcome to Poll Plaza, a dynamic and user-friendly polling platform designed to 
 ## Getting Started
 
 To get started with Poll Plaza, clone the repository and follow the setup instructions provided in the Description. Contributions are welcome!
-.
+
+### How can initiate Program
+
+#### Initiation of Django Backend
+
+1. Move into mysite folder
+
+```
+cd mysite
+```
+
+2. Initiate Poetry
+
+```
+poetry shell
+```
+
+3. Run Server
+
+```
+python manage.py runserver
+```
+
+#### Initiation of React Frontend
+
+##### Node version :  v18.18.2
+
+1. Move in reactpoll folder
+```
+cd reactpoll
+```
+2. Run Server
+```
+npm start
+```
 
 ## Acknowledgments
 
 - Django and React communities for their support and resources.
 - Inspiration from various polling platforms and their functionalities.
-
