@@ -76,14 +76,14 @@ def create_poll(request):
             question_text = json_data.get('Question')
             option_votes = json_data.get('OptionVote', {})
             tags = json_data.get('Tags', [])
-            
+
             # Create the question object
             pub_date = timezone.now()
             question = Question.objects.create(
                 question_text=question_text,
                 pub_date=pub_date
             )
-            
+
             # Create choice objects for each option vote
             for option, votes in option_votes.items():
                 choice = Choice.objects.create(
@@ -91,7 +91,7 @@ def create_poll(request):
                     choice_text=option,
                     votes=votes
                 )
-            
+
             # Create tag objects for each tag
             for tag_name in tags:  # Iterate over tag names
                 tag = Tag.objects.create(  # Use the Tag model to create tag objects
@@ -100,10 +100,10 @@ def create_poll(request):
                 )
 
             return JsonResponse({'Data': 'Loaded'})
-        
+
         except json.JSONDecodeError:
             return JsonResponse({'error': 'Invalid JSON data'}, status=400)
-    
+
     return JsonResponse({'error': 'Method not allowed'}, status=405)
 
 def fetch_polls(request):
@@ -161,7 +161,7 @@ def update_poll_option(request, pk):
         payload = json.loads(request.body)
         increment_option = payload.get('incrementOption')
         try:
-            
+
             poll = Question.objects.get(pk=pk)
             choice = Choice.objects.get(question=poll, choice_text=increment_option)
             choice.votes += 1
@@ -224,23 +224,23 @@ def fetch_tags(request):
 # def update_poll_option(request, pk):
 #     # Retrieve the poll object
 #     poll = get_object_or_404(Question, pk=pk)
-    
+
 #     if request.method == 'PUT':
 #         # Logic to update the poll object based on the data sent in the request
 #         # For demonstration purposes, let's assume the data is sent as JSON in the request body
 #         # You would typically use serializers or other methods to handle data validation and update
-        
+
 #         # Example logic to update the poll object based on the JSON data
 #         # Assuming the JSON data contains fields to update the poll, e.g., 'question', 'options'
 #         data = request.POST  # Assuming JSON data is sent in the body of the request
 #         poll.question = data.get('question', poll.question)
 #         poll.save()
-        
+
 #         # You can return any response indicating the successful update
 #         return JsonResponse({'message': 'Poll updated successfully'})
-    
+
     # # Handle other HTTP methods if needed
-    
+
     # # Return the poll details if the request method is not PUT
     # return JsonResponse({'id': poll.id, 'question': poll.question, 'options': poll.options})
 

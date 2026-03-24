@@ -1,6 +1,6 @@
 # Poll Plaza: A Comprehensive Polling Platform
 
-Welcome to Poll Plaza, a dynamic and user-friendly polling platform designed to engage and inform. Built with a robust backend using Django and a modern frontend powered by React, Poll Plaza offers a seamless experience for creating, voting on, and filtering polls by tags.
+Welcome to Poll Plaza, a dynamic and user-friendly polling platform designed to engage and inform. Built with a robust backend using Go and a modern frontend powered by React, Poll Plaza offers a seamless experience for creating, voting on, and filtering polls by tags.
 
 ## Key Features
 
@@ -10,7 +10,7 @@ Welcome to Poll Plaza, a dynamic and user-friendly polling platform designed to 
 
 ## Technology Stack
 
-- **Backend:** Django, a high-level Python Web framework that encourages rapid development and clean, pragmatic design.
+- **Backend:** Go, a statically typed, compiled programming language designed for fast execution, concurrency, and reliability. We use Gin for the HTTP web framework and GORM for database operations.
 - **Frontend:** React, a JavaScript library for building user interfaces, offering a fast, scalable, and simple way to create interactive UIs.
 
 ## Getting Started
@@ -19,24 +19,18 @@ To get started with Poll Plaza, clone the repository and follow the setup instru
 
 ### How can initiate Program
 
-#### Initiation of Django Backend
+#### Initiation of Go Backend
 
-1. Move into mysite folder
-
-```
-cd mysite
-```
-
-2. Initiate Poetry
+1. Move into backend folder
 
 ```
-poetry shell
+cd backend
 ```
 
-3. Run Server
+2. Run Server
 
 ```
-python manage.py runserver
+go run .
 ```
 
 #### Initiation of React Frontend
@@ -54,5 +48,5 @@ npm start
 
 ## Acknowledgments
 
-- Django and React communities for their support and resources.
+- Go and React communities for their support and resources.
 - Inspiration from various polling platforms and their functionalities.
